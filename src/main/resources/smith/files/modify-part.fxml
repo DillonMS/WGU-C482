@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smith.files.ModifyPartController">
+   <Label layoutX="14.0" layoutY="14.0" text="Modify Part">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <RadioButton fx:id="modifyPartInHouseButton" layoutX="144.0" layoutY="14.0" mnemonicParsing="false" onAction="#onModifyPartInHouseButtonClick" selected="true" text="In-House" />
+   <RadioButton fx:id="modifyPartOutsourcedButton" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" onAction="#onModifyPartOutsourcedClick" text="Outsourced" />
+   <TextField fx:id="modifyPartIDText" editable="false" layoutX="139.0" layoutY="91.0" opacity="0.4" />
+   <TextField fx:id="modifyPartMinText" layoutX="383.0" layoutY="240.0" />
+   <TextField fx:id="modifyPartMachineIDText" layoutX="139.0" layoutY="284.0" />
+   <TextField fx:id="modifyPartMaxText" layoutX="139.0" layoutY="240.0" />
+   <TextField fx:id="modifyPartPriceText" layoutX="139.0" layoutY="200.0" />
+   <TextField fx:id="modifyPartInvText" layoutX="139.0" layoutY="163.0" />
+   <TextField fx:id="modifyPartNameText" layoutX="139.0" layoutY="127.0" />
+   <Label layoutX="46.0" layoutY="95.0" text="ID" />
+   <Label layoutX="313.0" layoutY="244.0" text="Min" />
+   <Label layoutX="46.0" layoutY="131.0" text="Name" />
+   <Label layoutX="46.0" layoutY="167.0" text="Inv" />
+   <Label layoutX="46.0" layoutY="244.0" prefHeight="0.0" prefWidth="28.0" text="Max" />
+   <Label fx:id="modifyPartMachineIDLabel" layoutX="46.0" layoutY="288.0" text="Machine ID" />
+   <Label layoutX="46.0" layoutY="204.0" text="Price/Cost" />
+   <Button fx:id="modifyPartSaveButton" layoutX="324.0" layoutY="339.0" mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
+   <Button fx:id="modifyPartCancelButton" layoutX="405.0" layoutY="339.0" mnemonicParsing="false" onAction="#onModifyPartCancelButtonClick" text="Cancel" />
+</AnchorPane>
